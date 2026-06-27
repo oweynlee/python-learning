@@ -43,3 +43,27 @@ print(a / b) # Division
 print(a // b) # Floor Division
 print(a % b) # Modulus
 print(a ** b) # Exponentiation
+
+# ---------------------------------------- #
+## Exercises
+Name = "Oweyn"
+Dream_Company = "JPMorgan"
+Favourite_Stock = "TSLA"
+
+print(Name, Dream_Company, Favourite_Stock)
+
+Age = int(input("What is your age? "))
+Height = float(input("What is your height in meters? "))
+
+print("Age:", Age)
+print("Height:", Height, "meters")
+
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+
+print("Addition:", a+b)
+print("Subtraction:", a-b)
+print("Multiplication:", a*b)
+print("Division::", a/b)
+
+# ---------------------------------------- #
