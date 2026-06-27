@@ -14,16 +14,11 @@ print(f"Savings Rate: {saving_rate:.2f}%")
 
 if saving_rate > 30:
     print("Great job! Excellent savings habit.")
-
-if 10 < saving_rate < 30:
+elif 10 < saving_rate < 30:
     print("Good job!Keep improving.")
-
-if saving_rate < 10:
+else:
     print("Consider reducing your expenses.")
 
-
-
-    
 
 
 # ---------------------------------------- #

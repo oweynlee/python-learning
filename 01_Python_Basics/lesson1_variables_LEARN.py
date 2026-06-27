@@ -36,10 +36,10 @@ print("hello, oweyn") # This will print the string "hello, oweyn" to the console
 a = 123
 b = 456
 
-# print(a + b) # Addition
-# print(a - b) # Subtraction
-# print(a * b) # Multiplication
-# print(a / b) # Division
-# print(a // b) # Floor Division
+print(a + b) # Addition
+print(a - b) # Subtraction
+print(a * b) # Multiplication
+print(a / b) # Division
+print(a // b) # Floor Division
 print(a % b) # Modulus
-# print(a ** b) # Exponentiation
+print(a ** b) # Exponentiation
