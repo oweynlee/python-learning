@@ -3,18 +3,19 @@ choices = ["Add Expense", "View Expenses", "Total Expenses", "Exit"]
 
 
 def add():
-    value = float(input("Please enter your expense: RM "))
-    expenses.append(value)
-    return expenses
+    category = input("Please enter your expense category: ")
+    amount = float(input("Please enter your expense: RM "))
+    expense = {"category": category, "amount": amount}
+    expenses.append(expense)
 
 def view():
-    for expense in expenses:
-        print(f"RM {expense:.2f}")
+    for index, expense in enumerate(expenses, start=1):
+        print(f"{index}. Category: {expense["category"]}, Amount: RM {expense["amount"]:.2f}")
 
 def total_view():   
-    total = 0                               #OUTSIDE OF LOOP BUT LOCAL NOT GLOBAL VARIABLE
+    total = 0                        #OUTSIDE OF LOOP BUT LOCAL NOT GLOBAL VARIABLE
     for expense in expenses:
-        total = total + expense
+        total = total + expense["amount"]
     return total
 
 def exit():
@@ -25,7 +26,7 @@ while True:
     print ("===== Expense Tracker =====")
 
     for _, choice in zip(range(1, 5), choices):
-        print(f"{_}.{choice}")
+        print(f"{_}. {choice}")
 
     decisions = int(input("Please select the mode you want to proceed (1-4):"))
 
@@ -34,6 +35,8 @@ while True:
         print("Added Successfully!")
     elif decisions == 2:
         view()
+        if expenses == []:
+            print("No expenses recorded yet.")
     elif decisions == 3:
         total=total_view()
         if total == 0:
