@@ -22,3 +22,20 @@ for key in person:  # Print the keys in the dictionary, which are "name", "age",
 
 for key in person:
     print(person[key]) # Print the values in the dictionary, which are "Oweyn", 19, and "Malaysia"
+
+# ---------------------------------- #
+
+expenses = []
+
+expense = {
+    "category": "Food",
+    "amount": 20
+}
+
+expenses.append(expense)
+
+print(expenses)
+
+
+
+# U

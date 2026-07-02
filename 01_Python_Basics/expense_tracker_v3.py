@@ -1,7 +1,3 @@
-expenses = []
-choices = ["Add Expense", "View Expenses", "Total Expenses", "Exit"]
-
-
 def add():
     category = input("Please enter your expense category: ")
     amount = float(input("Please enter your expense: RM "))
@@ -20,7 +16,23 @@ def total_view():
 
 def exit():
     print("Thank you for using the expense tracker!")
-    
+
+def save_expenses():
+    with open("expenses.txt", "w") as file:
+        for expense in expenses:
+            file.write(f"{expense["category"]},{expense["amount"]}\n")
+
+def load_expenses():
+    with open("expenses.txt", "r") as file:
+        for expense in file:
+            category, amount = expense.strip().split(",")
+            expense = {"category":category,
+                       "amount":float(amount)}
+            expenses.append(expense)
+
+expenses = []
+choices = ["Add Expense", "View Expenses", "Total Expenses", "Exit"]
+load_expenses()
 
 while True:
     print ("===== Expense Tracker =====")
@@ -33,10 +45,12 @@ while True:
     if decisions == 1:
         add()
         print("Added Successfully!")
+        save_expenses()
     elif decisions == 2:
-        view()
-        if expenses == []:
+        if not expenses:
             print("No expenses recorded yet.")
+        else:
+            view()
     elif decisions == 3:
         total=total_view()
         if total == 0:
