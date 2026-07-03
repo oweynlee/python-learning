@@ -23,12 +23,17 @@ def save_expenses():
             file.write(f"{expense["category"]},{expense["amount"]}\n")
 
 def load_expenses():
-    with open("expenses.txt", "r") as file:
-        for expense in file:
-            category, amount = expense.strip().split(",")
-            expense = {"category":category,
-                       "amount":float(amount)}
-            expenses.append(expense)
+    try:
+        with open("expenses.txt", "r") as file:
+            for expense in file:
+                category, amount = expense.strip().split(",")
+                expense = {"category":category,
+                        "amount":float(amount)}
+                expenses.append(expense)
+    except FileNotFoundError:
+        print("No previous expense file found.")
+        print("Starting a new expense tracker.")
+        save_expenses()  
 
 expenses = []
 choices = ["Add Expense", "View Expenses", "Total Expenses", "Exit"]
