@@ -1,5 +1,3 @@
-balance = 0
-
 def show_balance(balance_amount):
      print(f"Current Balance: RM {balance_amount:.2f}")
 
@@ -20,6 +18,23 @@ def withdraw(balance, withdraw_amount):
 def exit_program():
     print ("Thank you for using our ATM!")
 
+def save_balance(balance):
+    with open("balance.txt", "w") as file:
+        file.write(f"{balance}\n")
+
+def load_balance():
+    try: 
+        with open("balance.txt", "r") as file:
+            balance = float(file.read().strip())
+    except FileNotFoundError:
+        print("No previous balance file found.")
+        print("Starting a new ATM session.")
+        balance = 0
+        save_balance(balance)
+    return balance
+
+balance = load_balance()
+
 while True:
     print("====== ATM ======")
 
@@ -33,10 +48,12 @@ while True:
     elif decision == 2:
         deposit_amount = float(input("Please enter deposit amount: RM"))
         balance = deposit(balance, deposit_amount)
+        save_balance(balance)
 
     elif decision == 3:
         withdraw_amount = float(input("Please enter withdraw amount: RM"))
         balance = withdraw(balance, withdraw_amount)
+        save_balance(balance)
     else:
         exit_program()
         break

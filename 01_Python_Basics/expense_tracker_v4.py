@@ -36,16 +36,16 @@ def load_expenses():
         save_expenses()  
 
 expenses = []
-choices = ["Add Expense", "View Expenses", "Total Expenses", "Exit"]
+options = ["Add Expense", "View Expenses", "Total Expenses", "Exit"]
 load_expenses()
 
 while True:
     print ("===== Expense Tracker =====")
 
-    for _, choice in zip(range(1, 5), choices):
-        print(f"{_}. {choice}")
+    for index, options in enumerate(options, start=1):
+        print(f"{index}. {options}")
 
-    decisions = int(input("Please select the mode you want to proceed (1-4):"))
+    decisions = int(input("Choose an option to proceed (1-4):"))
 
     if decisions == 1:
         add()
