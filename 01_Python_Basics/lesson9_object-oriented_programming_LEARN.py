@@ -11,6 +11,7 @@ car.greet()  # Output: Hello, my name is Alice and I am 30 years old.
 
 car.add() #adding into the class Blueprint
 
-.pop() # remove by the index of the list
-.remove() # remove by the value of the list
-.add() # add into the list
+car.pop() # remove by the index of the list
+car.remove() # remove by the value of the list
+car.add() # add into the list
+

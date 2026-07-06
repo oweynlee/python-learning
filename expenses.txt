@@ -1,0 +1,2 @@
+Food,20
+Coffee,8

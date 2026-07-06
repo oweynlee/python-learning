@@ -9,3 +9,6 @@ def highest(numbers):
             largest_number = number
 
     return largest_number
+
+def count(numbers):
+    return len(numbers)
