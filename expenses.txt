@@ -1,2 +1,1 @@
-Food,20
-Coffee,8
+Food,100.0

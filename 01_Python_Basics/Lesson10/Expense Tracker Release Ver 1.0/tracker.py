@@ -17,5 +17,19 @@ class ExpenseTracker:
             for index, expense in enumerate(self.expenses, start=1):
                 print(f"{index}. {expense['category']} - RM {expense['amount']:.2f}")
 
-    def count(self):
-        return len(self.expenses)
+    def total(self):
+        total = 0
+        for expense in self.expenses:
+            total += expense['amount']
+        return total
+    
+    def delet(self, index):
+        if 1 <= index <= len(self.expenses):
+            self.expenses.pop(index-1)
+        else:
+            print("Invalid expense number.")
+            
+
+    
+
+
