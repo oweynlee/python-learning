@@ -27,6 +27,7 @@ while True:
         if not tracker.expenses:
             print("No expenses recorded yet.")
         else:
+            print(tracker.expenses)
             tracker.view()
     
     
@@ -36,8 +37,10 @@ while True:
     
     
     elif decisions == 4:
+        tracker.view()
         index = int(input("Choose expense number: "))
         tracker.delet(index)
+        save(tracker.expenses)
     
     
     else:

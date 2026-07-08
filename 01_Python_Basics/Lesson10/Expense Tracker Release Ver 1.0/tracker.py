@@ -15,7 +15,8 @@ class ExpenseTracker:
             print("No expenses recorded yet.")
         else:
             for index, expense in enumerate(self.expenses, start=1):
-                print(f"{index}. {expense['category']} - RM {expense['amount']:.2f}")
+                print(f"{index}. {expense['category']}, RM {expense['amount']:.2f}")
+        
 
     def total(self):
         total = 0
