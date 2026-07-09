@@ -14,4 +14,3 @@ car.add() #adding into the class Blueprint
 car.pop() # remove by the index of the list
 car.remove() # remove by the value of the list
 car.add() # add into the list
-
