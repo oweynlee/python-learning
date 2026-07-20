@@ -17,3 +17,7 @@ print(df.groupby("Country")["Price"].max())    # find the largest price per grou
 print(df.groupby("Country")["Price"].count())    # same as .size()
 # .size() counts rows.
 # .count() counts non-empty values in a specific column.
+
+print(
+    df.groupby("Country")["Price"].agg(["count", "sum", "mean", "min", "max"])  # Multiple Aggregations (Product multiple function in a go)
+)
