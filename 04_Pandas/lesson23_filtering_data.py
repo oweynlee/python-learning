@@ -8,4 +8,9 @@ df = pd.DataFrame({
 
 print(df)
 
-print(df["Score"]>85)
+print(df["Score"]>85)   # Check the condition true or false
+print(df[df["Score"] > 85]) # Print the true condition row
+
+df[(df["Class"] == "B") | (df["Score"] >= 90)]
+
+# Review same concept

@@ -13,3 +13,5 @@ print(df.drop_duplicates()) # Delete duplicated data, only left one at the first
 
 df = df.drop_duplicates().reset_index(drop=True)    # Reset the index back to, 0,1,2
 print(df["Customer"].duplicated())      # Only check specific column
+
+df.drop_duplicates(inplace=True)    # This is to return back to the list
