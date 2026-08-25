@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 
 df = pd.DataFrame({
     "Salesperson": ["Alice", "Bob", "Alice", "David", "Bob", "Eva", "David", "Alice"],
@@ -57,3 +58,32 @@ laptop_sales_region = (df[df["Product"] == "Laptop"]
 )
 print(f"Laptop Sales by Region: {laptop_sales_region.index[0]}")
 print(laptop_sales_region)
+
+# ------------------------------
+# Lesson 26 Part 2
+# Pivot Table
+# ------------------------------
+
+pivot = pd.pivot_table(
+    df,
+    index = "Region",
+    columns = "Product",
+    values = "Sales",
+    aggfunc = "count",
+    fill_value = 0
+
+)
+
+print(pivot)
+
+# ------------------------------
+# Lesson 26 Part 3
+# Visualization
+# ------------------------------
+product_ranking.plot(kind="bar")
+
+plt.title("Total Sales by Product")
+plt.xlabel("Product")
+plt.ylabel("Total Sales (RM)")
+
+plt.show()

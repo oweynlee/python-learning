@@ -18,4 +18,4 @@ print(f"Math Average: {df['Math'].mean():.2f}, English Average: {df['English'].m
 
 print(df["Class"].value_counts())
 
-print(df.groupby("Class")[["Math", "English"]].agg(["mean","max","min"]).sort_values(by=[("Math", "mean")], ascending=False)
+print(df.groupby("Class")[["Math", "English"]].agg(["mean","max","min"]).sort_values(by=[("Math", "mean")], ascending=False))
