@@ -1,75 +1,99 @@
-# 🐍 Python Learning Journey
+# 🐍 Python Data Analytics Bootcamp
 
 Welcome to my Python learning repository!
 
-This repository documents my journey from Python fundamentals to data analysis and quantitative finance.
+This repository documents my journey from learning Python fundamentals to building real-world data analytics projects.
 
 ---
 
-## 📚 Completed Topics
+## 📚 Learning Roadmap
 
-- ✅ Python Basics
-- ✅ Variables
-- ✅ Conditions
-- ✅ Loops
-- ✅ Functions
-- ✅ Lists
-- ✅ Dictionaries
-- ✅ File Handling
-- ✅ Error Handling
-- ✅ Object-Oriented Programming
-- ✅ Modules
-- ✅ NumPy (1D & 2D)
-- 🔄 Pandas (In Progress)
+### ✅ 01. Python Basics
+- Variables & Data Types
+- Operators
+- Conditional Statements
+- Loops
+- Functions
+- Lists
+- Dictionaries
+- File Handling
+- Error Handling
+- Modules
 
 ---
 
-## 🚀 Projects
-
-- 💰 Personal Finance Calculator
-- 🏦 ATM Simulator
-- 📈 Compound Interest Calculator
-- 🧾 Expense Tracker (Version 1.0)
-- 📊 Stock Market Analyzer
+### 🚧 02. Object-Oriented Programming
+- Classes
+- Objects
+- Inheritance
+- Encapsulation
+- Polymorphism
 
 ---
 
-## 🛠 Technologies
+### ✅ 03. NumPy
+- NumPy Basics
+- 2D Arrays
+- Array Operations
+- Reshaping & Unravel
+- Mathematical Functions
 
-- Python 3.14
+---
+
+### ✅ 04. Pandas
+- DataFrames
+- Reading CSV Files
+- DataFrame Operations
+- Filtering
+- Columns
+- loc & iloc
+- GroupBy
+- Merge
+- Missing Data
+- Duplicate Data
+- Sorting
+- Pivot Tables
+
+---
+
+### ✅ 05. Data Visualization
+- Matplotlib
+- Bar Charts
+- Pie Charts
+- Line Charts
+- Histograms
+- Subplots
+- Dashboard Creation
+
+---
+
+### 🔜 Upcoming Modules
+- SQL
+- Statistics
+- Machine Learning
+- Quantitative Finance
+- Financial Analytics
+
+---
+
+# 💼 Portfolio Projects
+
+- Expense Tracker
+- Stock Market Analyzer
+- Student Performance Analysis
+- Sales Analysis Dashboard
+
+---
+
+# 🛠 Technologies
+
+- Python
 - NumPy
 - Pandas
-- VS Code
-- Git & GitHub
+- Matplotlib
 
 ---
 
-## 🎯 Learning Goal
+# 🎯 Goal
 
-My goal is to become proficient in Python for:
-
-- 📊 Data Analytics
-- 💹 Quantitative Finance
-- 🤖 Machine Learning
-- 📈 Financial Modelling
-
----
-
-## 📈 Progress
-
-Current Progress:
-
-███████████████░ 15 / 16 Modules
-
-Currently Learning:
-- Pandas
-
-## 🎓 Current Education
-
-Bachelor of Business and Commerce
-Monash University Malaysia
-
-Interested in:
-- Data Analytics
-- Quantitative Finance
-- Financial Markets
+Build a strong portfolio for Data Analytics, Business Analytics, Quantitative Finance, and Financial Technology.
